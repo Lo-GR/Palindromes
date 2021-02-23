@@ -18,5 +18,10 @@ namespace Excercise.Tests
     {
       Assert.AreEqual(false, Palindrome.isPalindrome("banana"));
     }
+    [TestMethod]
+    public void isPalindrome_Caps()
+    {
+      Assert.AreEqual(true, Palindrome.isPalindrome("RacECAr"));
+    }
   }
 }
