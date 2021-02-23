@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Excercise;
+using PalindromeSpace.Models;
 
-namespace Excercise.Tests
+namespace PalindromeSpace.Tests
 {
   [TestClass]
   public class PalindromeTests
@@ -22,6 +22,11 @@ namespace Excercise.Tests
     public void isPalindrome_Caps()
     {
       Assert.AreEqual(true, Palindrome.isPalindrome("RacECAr"));
+    }
+    [TestMethod]
+    public void isPalindrome_Singlechar()
+    {
+      Assert.AreEqual(false, Palindrome.isPalindrome("a"));
     }
   }
 }

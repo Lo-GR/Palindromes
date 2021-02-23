@@ -22,7 +22,7 @@ namespace PalindromeSpace.Models
       {
         reverseHalf += secondHalf[index];
       }
-      if (firstHalf.ToLower() == reverseHalf.ToLower())
+      if (firstHalf.ToLower() == reverseHalf.ToLower() && str.Length > 1)
       {
         return true;
       }
