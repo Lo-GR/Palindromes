@@ -12,5 +12,11 @@ namespace Excercise.Tests
       // Palindrome testLeapYear = new Palindrome();
       Assert.AreEqual(true, Palindrome.isPalindrome("racecar"));
     }
+
+    [TestMethod]
+    public void isNotPalindrome_Banana()
+    {
+      Assert.AreEqual(false, Palindrome.isPalindrome("banana"));
+    }
   }
 }
