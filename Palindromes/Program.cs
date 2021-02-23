@@ -18,6 +18,16 @@ namespace PalindromeSpace {
         Console.WriteLine(userInput + " is not a Palindrome, sorry guy.");
       }
       Console.ResetColor();
+      Console.WriteLine();
+      Console.Write("Would you like to continue? Enter Y for yes or anything else for no: ");
+      string userContinue = (Console.ReadLine()).ToLower();
+      if ( userContinue == "y")
+      {
+        Main();
+      } else 
+      {
+        Console.WriteLine("Have a swell day");
+      }
     }
   }
 }
