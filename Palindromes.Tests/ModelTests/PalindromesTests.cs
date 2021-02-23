@@ -7,10 +7,10 @@ namespace Excercise.Tests
   public class PalindromeTests
   {
     [TestMethod]
-    public void IsPalindrome_HelloWorld()
+    public void IsPalindrome_Racecar()
     {
       // Palindrome testLeapYear = new Palindrome();
-      Assert.AreEqual(true, Palindrome.isPalindrome("2012"));
+      Assert.AreEqual(true, Palindrome.isPalindrome("racecar"));
     }
   }
 }
